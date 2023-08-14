@@ -26,9 +26,8 @@ body {
 }
 .app--container {
   background-color: var(--dark-grayish-blue);
-  max-width: 54rem;
-  padding: 4rem;
-  padding-bottom: 8rem;
+  width: 54rem;
+  padding: 4em 4em 6.4em;
   border-radius: 2rem;
   position: relative;
 }
@@ -42,7 +41,7 @@ body {
   font-weight: 800;
 }
 .quote {
-  margin: 2rem 0 3rem;
+  margin: 1em 0;
   color: var(--light-cyan);
   font-size: 2.8rem;
   text-align: center;
@@ -50,26 +49,10 @@ body {
   line-height: 1.5;
 }
 .line {
-  background-color: rgb(206, 227, 233, 0.2);
-  height: 1px;
-  width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
-.line--icon {
-  color: var(--light-cyan);
-  background-color: var(--dark-grayish-blue);
-  display: flex;
-  gap: 6px;
-  padding: 0 1rem;
-}
-.icon {
-  height: 15px;
-  width: 5px;
-  background-color: var(--light-cyan);
-  border-radius: 100px;
-}
+
 .dice {
   position: absolute;
   bottom: 0;
@@ -92,7 +75,7 @@ body {
   transform: scale(2.6);
 }
 .attribution {
-  margin-top: 5rem;
+  margin-top: 6rem;
   font-size: 1.3rem;
   text-align: center;
   color: var(--light-cyan);
@@ -100,4 +83,17 @@ body {
 }
 .attribution a {
   color: var(--light-cyan);
+}
+
+@media (max-width: 375px) {
+  body {
+    padding: 0 1.5rem;
+  }
+  .app--container {
+    width: 100%;
+    padding: 4em 1em 6em;
+  }
+  .quote {
+    font-size: 2.2rem;
+  }
 }

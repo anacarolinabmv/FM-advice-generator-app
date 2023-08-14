@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
     <script src="https://kit.fontawesome.com/c356afc66b.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/axios@1.1.2/dist/axios.min.js"></script>
     <link rel="stylesheet" href="style.css" />
     <title>Frontend Mentor | Advice generator app</title>
   </head>
   <body>
     <main>
       <div class="app--container">
-        <h3 class="advice" id="advice">ADVICE #117</h3>
+        <h3 class="advice">ADVICE #<span id="advice">117</span></h3>
         <h1 class="quote" id="quote">
-          &ldquo;It is easy to sit up and take notice, what`s difficult is getting up and taking action&rdquo; ''
+          &ldquo;It is easy to sit up and take notice, what`s difficult is getting up and taking action&rdquo;
         </h1>
         <div class="line">
-          <div class="line--icon">
-            <div class="icon"></div>
-            <div class="icon"></div>
-          </div>
+          <svg width="295" height="16" xmlns="http://www.w3.org/2000/svg">
+            <g fill="none" fill-rule="evenodd">
+              <path fill="#4F5D74" d="M0 8h122v1H0zM173 8h122v1H173z" />
+
+              <g transform="translate(138)" fill="#CEE3E9">
+                <rect width="6" height="16" rx="3" />
+                <rect x="14" width="6" height="16" rx="3" />
+              </g>
+            </g>
+          </svg>
         </div>
-        <div class="dice">
+        <div class="dice" id="dice">
           <i class="fa-solid fa-dice-five dice--icon"></i>
         </div>
       </div>
