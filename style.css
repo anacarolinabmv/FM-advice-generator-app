@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@800&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Manrope', sans-serif;
+}
+:root {
+  --light-cyan: hsl(193, 38%, 86%);
+  --neon-green: hsl(150, 100%, 66%);
+  --grayish-blue: hsl(217, 19%, 38%);
+  --dark-grayish-blue: hsl(217, 19%, 24%);
+  --dark-blue: hsl(218, 23%, 16%);
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--dark-blue);
+}
+.app--container {
+  background-color: var(--dark-grayish-blue);
+  max-width: 54rem;
+  padding: 4rem;
+  padding-bottom: 8rem;
+  border-radius: 2rem;
+  position: relative;
+}
+
+.advice {
+  color: var(--neon-green);
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 4px;
+  font-size: 1.3rem;
+  font-weight: 800;
+}
+.quote {
+  margin: 2rem 0 3rem;
+  color: var(--light-cyan);
+  font-size: 2.8rem;
+  text-align: center;
+  font-weight: 800;
+  line-height: 1.5;
+}
+.line {
+  background-color: rgb(206, 227, 233, 0.2);
+  height: 1px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.line--icon {
+  color: var(--light-cyan);
+  background-color: var(--dark-grayish-blue);
+  display: flex;
+  gap: 6px;
+  padding: 0 1rem;
+}
+.icon {
+  height: 15px;
+  width: 5px;
+  background-color: var(--light-cyan);
+  border-radius: 100px;
+}
+.dice {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  background-color: var(--neon-green);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2.6rem;
+  border-radius: 50%;
+}
+.dice--icon {
+  transform: scale(2.6);
+}
+.attribution {
+  margin-top: 4rem;
+  font-size: 1.3rem;
+  text-align: center;
+  color: var(--light-cyan);
+  letter-spacing: 0.6px;
+}
+.attribution a {
+  color: var(--light-cyan);
+}
